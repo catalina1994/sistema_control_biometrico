@@ -1,0 +1,193 @@
+//login
+.login-logos{
+  display: flex;
+  padding: 1em 0;
+  justify-content: center;
+  @include mediaQ(769px){
+    padding: 0;
+    justify-content: start;
+  }
+  img{
+    margin: 0;
+  }
+  .login-logo{
+  display: block;
+  height: 4em;
+  width: 9.5em;
+  padding-left: 1em;
+  border-left: 1px solid rgb(207, 207, 207);
+  @include mediaQ(567px){
+    margin-left: 1em;
+    padding-left: 2em;
+  }
+  }
+}
+//layout
+.av-layout {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+//layout pag-internas
+.layout-int{
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+}
+.d-subtitle {
+  color: #686666;
+
+  i{
+    color: $color_primary;
+    margin-right:.6em;
+    
+  }
+}
+//header
+.system_header{
+  background-color: #fff;
+  padding: .3em 0;
+  @include mediaQ(992px){
+    padding: 0;
+  }
+  &-banner{
+    display:none;
+    @include mediaQ(992px){
+      display: block;
+    }
+    img{
+      margin: 0;
+    }
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    @include mediaQ(600px){
+      justify-content: space-between;
+    }
+  }
+}
+.system_header-logo{
+  display: flex;
+  align-items: center;
+}
+.system-logo{
+  display: none;
+  @include mediaQ(600px){
+    display: block;
+  height: 4em;
+  width: 9.5em;
+  }
+}
+.system-title{
+  color:$color-third ;
+  line-height: 1;
+  padding: .5em 0;
+  text-align: center;
+  
+  @include mediaQ(600px){
+    padding: 0;
+   padding-left: 1em;
+    text-align: left;
+  }
+  h1{
+      font-size: 24px;
+      margin: 0;
+      line-height: 1;
+      font-family: $font_text_bold;
+  }
+  p{
+      margin: 0;
+      font-size: 18px;
+  }
+}
+.logo-second{
+  display: none;
+  padding-right: 1em;
+  border-right: 1px solid rgb(207, 207, 207);
+  @include mediaQ(769px){
+    display: block;
+  }
+}
+//menu
+.system-menu{
+  background-color: $color_primary;
+}
+.navbar{
+  padding: .5rem 0;
+}
+.navbar-nav{
+  @include mediaQ(992px){
+      position: relative;
+      width: 100%;
+  }
+  .nav-item:last-child{
+      @include mediaQ(992px){
+          position: absolute;
+          right: 0;
+      }
+  }
+}
+  
+.navbar-dark .navbar-nav .nav-link{
+  color: #fff;
+  
+}
+
+.user{
+  color: $color_secondary_text;
+  .user-data{
+    padding: 1em;
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
+  .user-close{
+    color:$color_primary;
+  }
+}
+//main
+.av-main {
+  // background-image: url("../img/fondo_2.jpg");
+  background: linear-gradient(294.09deg, #00335E 49.14%, #075088 87.4%, #0D6AAE 108.27%);;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 2;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.system-main{
+  padding: 1em 0;
+  // background-image: url("../img/fondo_int.jpg");
+  background-color: #F6F6F6;
+  background-size: cover;
+  flex-grow:2;
+}
+
+//footer
+.mobil-logos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 2px -1px 5px #ccced0;
+  padding: .5em 0;
+  @include mediaQ(600px){
+    display: none;
+  }
+}
+.av-footer {
+  //opacity: .3;
+  background-color: $color_primary;
+  color: $color_light-text;
+  align-items: center;
+  text-align: center;
+  p{
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+    opacity: .5;
+  }
+  // padding: .4em 0;
+}

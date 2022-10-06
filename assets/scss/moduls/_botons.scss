@@ -1,0 +1,39 @@
+//btn
+.btn-principal{
+    color: $color-light-text;
+    background-color: $color-forth;
+    &:hover{
+      color: #fff;
+      background-color: darken($color-forth, 4);
+    }
+  }
+  .av-btn-confirm{
+    color: $color-light-text;
+    background-color: $color_primary_aux;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &:hover{
+      color: #fff;
+      background-color: darken($color_primary_aux, 4);
+    }
+  }
+  .av-btn-not-confirm{
+    color: $color-light-text;
+    background-color: $color_secondary_aux;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &:hover{
+      color: #fff;
+      background-color: darken($color_secondary_aux, 4);
+    }
+  }
+  .av-btn-return{
+    color: $color_primary;
+    background-color: $color-light-text;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &:hover{
+      color: $color_primary;
+      background-color: darken($color-light-text, 4);
+    }
+  }

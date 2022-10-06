@@ -1,0 +1,179 @@
+.img-principal{
+  display: none;
+  @include mediaQ(769px){
+    display: block;
+  }
+}
+
+
+
+//link
+.link{
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  @include mediaQ(769px){
+    justify-content: start;
+  }
+  &-principal{
+    color: $color-light-text;
+    &::after{
+      content: "|";
+      margin: 0 1em;
+    }
+
+  }
+  &-principal:hover{
+    color: $color-light-text;
+  }
+
+  &-secondary{
+    font-size: 20px;
+    color: $color_primary;
+  }
+  &-secondary:hover{
+    text-decoration: none;
+    color: $color_primary;
+  }
+}
+
+//banner title
+.banner-title{
+  background-color: $color-five;
+  padding: 1em 1.5em;
+  border-radius: 8px;
+  color: #fff;
+  margin-bottom: .5em;
+  //box-shadow: 2px 2px 3px rgba(87, 86, 86, 0.2);
+  h5{
+    margin: 0;
+  }
+  a{
+    text-decoration: none;
+    color: $color_secondary;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+}
+
+//card formulary
+.card-formulary{
+  background-color: #fff;
+  padding: 1em 1.5em;
+  border-radius: 8px;
+  margin-bottom: .5em;
+  border: 1px solid rgb(231, 231, 231);
+  .title-formulary{
+    color: $color-third;
+  }
+  input{
+    border: solid 0.5px $header_table_color;
+  }
+  select{
+    border: solid 0.5px $header_table_color;
+  }
+  &-resolve-body{
+    background-color: $color_dark-light;
+    padding: 1em 1.5em;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-bottom: .5em;
+    .resolve-edit{
+      border: solid 1px $color_dark;
+      border-radius: 8px;
+      padding: 1em 1.5em;
+    }
+  }
+  &-resolve-title{
+    background-color: $color_dark-lighten;
+    color: $color-third;
+    padding: 1em 1.5em;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    margin-bottom: .2em;
+    p{
+      margin: 0;
+    }
+  }
+}
+
+.card-welcome{
+  background-color: $color_dark-light;
+  padding: 3em 3em;
+  border-radius: 8px;
+  .title-welcome{
+    color: $color-third;
+    font-size: 24px;
+  }
+}
+
+//icon-browser
+.d-browser{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  .icon-center {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+  }
+  .svg-icon.medium {
+      height: 2.1em;
+      width: 2.1em;
+  }
+  .icon-browser{
+      margin-left: -5px;
+      opacity: .5;
+      font-size: 12px;
+  }
+}
+
+//tables
+.header_table{
+  background-color: $header_table_color;
+}
+//pagina-error
+.pag-error{
+  display: flex;
+  align-items: center;
+}
+
+//modals
+.modal-body{
+  h5{
+    font-size: 16px;
+    font-family: $font_text_bold;
+  }
+}
+.modal-header{
+  background-color: $color_primary;
+  color: #fff;
+  .close{
+    color: #fff;
+  }
+}
+
+//img-captura
+.title-captura{
+  font-size: 13px;
+  font-family: $font_text_bold;
+  color: $color_primary;
+  margin-bottom: .2em;
+}
+.card-captura{
+  border:1px solid $color_dark-light;
+  border-radius:6px;
+  margin-bottom: .5em;
+  padding: .1em;
+}
+//line
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: $color-dark-light;
+}
